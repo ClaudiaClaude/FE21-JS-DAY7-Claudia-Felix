@@ -6,6 +6,11 @@ body{
     font-size: 1.5em; 
 }
 
+/* SLIDER LIBRARY*/
+.swiper-container {
+ width: 600px;
+ height: 300px;
+}
 
 #container{
     width: 80%;  /* Trying to make Wesbite responsive, div id="name" behaves strange */

@@ -8,6 +8,10 @@
     <title>My first Website</title>
     <!--Linking CSS file to the HTML document-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -50,11 +54,34 @@
 
 
         <!--START OF MAIN CONTENT-->
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div id="firstwebsite">
+                        <h1>This is my first <br> website :D</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    This is my second website</div>
+                <div class="swiper-slide">This is my first website</div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
         <main>
 
-            <div id="firstwebsite">
-                <h1>This is my first <br> website :D</h1>
-            </div>
+
 
 
 
@@ -66,12 +93,19 @@
 
             <section class="row">
                 <div class="column">
-                    <img src="img/Debit_card_ATM.jpg" alt="ATM with Debit Debit_card_ATM">
+                    <div class="common animate__animated animate__rollIn">
+
+                        <img src="img/Debit_card_ATM.jpg" alt="ATM with Debit Debit_card_ATM">
+                    </div>
                     <h2>Police are investigating three ATM explosions in two Florida counties</h2>
+
                 </div>
 
+
                 <div class="column">
-                    <img src="img/Taxify-Scooters.jpg" alt="Scooter">
+                    <div class="common animate__animated animate__rollIn">
+                        <img src="img/Taxify-Scooters.jpg" alt="Scooter">
+                    </div>
                     <h2>E- scooter firm Bolt pulls out of 12 cities</h2>
                 </div>
             </section>
@@ -95,6 +129,12 @@
 
     </div>
     <!--CONTAINER DIV END-->
+
+    <!--Script Library Links-->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
