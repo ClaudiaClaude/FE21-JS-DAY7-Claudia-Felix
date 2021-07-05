@@ -1,0 +1,147 @@
+/* EXTERNAL STYLESHEET CSS*/
+
+
+
+body{
+    font-size: 1.5em; 
+}
+
+
+#container{
+    width: 80%;  /* Trying to make Wesbite responsive, div id="name" behaves strange */
+    height: auto;
+    }
+
+
+    /***************************************************************************/
+
+
+/*START HEADER SECTION*/
+#name{
+    float: left;
+    padding: 10px;
+    font-size: 0.8em;
+
+}
+
+
+#logo{
+    float: right;
+    width: 250px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#banner{
+    font: size 50px;
+color:black;
+
+height: 140px; /*Height that menue is not inside of banner*/
+}
+
+nav{
+    background-color: red;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none; /* underline gone*/
+    
+}
+
+#menu a:hover{
+    text-decoration: underline;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#name{
+    text-align:right;
+    position:absolute;
+    }
+
+#logo{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+
+
+ul{
+    list-style: none; /* remove points in front of links*/
+    position: relative;
+    right: 50px;
+    text-align: right; /* To put menu right*/
+    margin-top: 0px; /* that menu bar is right after the banner*/
+   }
+   li{
+       display: inline;
+       
+       padding: 4px;
+       }
+/*END HEADER SECTION*/
+
+
+
+/**********************************************************************/
+
+
+/*START MAIN SECTION*/
+#phone{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.column{
+    float: left;
+    width: 45%;
+    padding: 5px;
+   
+    
+}
+
+section{
+    margin: 2em;
+}
+
+/* Clear floats after image containers */
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*END MAIN SECTION*/
+
+  
+  /**********************************************************************/
+
+
+  /*START FOOTER SECTION*/
+  footer{
+      text-align: center;
+      padding: 10px;
+      font-size: 0.5em;
+  }
+
+
+  /* BACKGROUND FOR LOGO FOR TOP AND BUTTOM USED AS A CLASS*/
+.background{
+    background-color: rgb(219, 198, 198);
+}
+
+
+  
+
+
+    #footerlogo{
+        width: 150px;
+}
+
+/*END FOOTER SECTION*/
