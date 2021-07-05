@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <title>Home &#8226; Claudia &#8226; Code Review 01</title>
 </head>
@@ -55,9 +58,23 @@
         
         
             <div id="mainContent">
+                    <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                       
+                      <div class="swiper-slide"> 
+                          <img src="img/Debit_card_ATM.jpg" alt="">
+                        </div>
+                      <div class="swiper-slide"><img src="img/Taxify-Scooters.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/commute.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="img/business.jpg" alt=""></div>
+                  
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
         
-                <div id="welcomeText">
-                    <h1>This is my first <br> website :D</h1>
+                <div id="welcomeText" >
+                    <h1 id="myButton">This is my first <br> website :D</h1>
                 </div>
         
                 <!--Linked Images-->
@@ -108,5 +125,42 @@
         <!-- // ENDS /// FOOTER  -->
     
     </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- Initialize Swiper -->
+      <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            });
+
+            var theButton = document.getElementById("myButton");
+            theButton.addEventListener("click", function(){
+                Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+                )
+            }
+            })
+            })
+        
+      </script>
+
 </body>
 </html>
