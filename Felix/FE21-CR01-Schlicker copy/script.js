@@ -8,6 +8,11 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 
+
+
+
+
+
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
@@ -19,3 +24,10 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-scrollbar',
     },
 });
+
+// SWEAT ALERT
+Swal.fire(
+    'Congratulations, you made it',
+    'This is an optional body message <br> for your window alert.',
+    'success'
+);
