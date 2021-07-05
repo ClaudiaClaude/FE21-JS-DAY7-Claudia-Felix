@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Website</title>
+    <!--Linking CSS file to the HTML document-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+
+</head>
+
+<body>
+    <!--Wrapping all the Body Content inside a div called Container-->
+    <div id="container">
+
+        <!---------------------------------------------------------------------->
+
+        <!--START HEADER SECTION-->
+        <header>
+            <div id="banner" class="background">
+
+                <!--Using span instead of div because it doesn't need to whole width of the page-->
+                <div id="name">
+                    <h2>Felix Schlicker- Full Stack Web Developer</h2>
+                </div>
+
+
+                <!--Same for logo-->
+                <img id="logo" src="img/logo.png" alt="logo">
+
+            </div>
+
+            <!--Building a navigation bar for the menu for better structur and HTML 5 standards-->
+            <nav>
+
+                <ul id="menu">
+                    <li><a href="Home" target="_blank">Home</a></li>
+                    <li><a href="Blog" target="_blank">Blog</a></li>
+                    <li><a href="About me" target="_blank">About me</a></li>
+                    <li><a href="Contact" target="_blank">Contact</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <!--END OF HEADER SECTION-->
+
+
+        <!---------------------------------------------------------------------->
+
+
+        <!--START OF MAIN CONTENT-->
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div id="firstwebsite">
+                        <h1>This is my first <br> website :D</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    This is my second website</div>
+                <div class="swiper-slide">This is my first website</div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <main>
+
+
+
+
+
+            <section id="phone"><img src="img/Phone.png" alt="Phone">
+                <h2>Samsung Galaxy S11/S20 Plus video leaks showing phone in real live!</h2>
+            </section>
+
+
+
+            <section class="row">
+                <div class="column">
+                    <div class="common animate__animated animate__rollIn">
+
+                        <img src="img/Debit_card_ATM.jpg" alt="ATM with Debit Debit_card_ATM">
+                    </div>
+                    <h2>Police are investigating three ATM explosions in two Florida counties</h2>
+
+                </div>
+
+
+                <div class="column">
+                    <div class="common animate__animated animate__rollIn">
+                        <img src="img/Taxify-Scooters.jpg" alt="Scooter">
+                    </div>
+                    <h2>E- scooter firm Bolt pulls out of 12 cities</h2>
+                </div>
+            </section>
+        </main>
+        <!--END OF MAIN CONTENT-->
+
+
+        <!---------------------------------------------------------------------->
+
+
+        <!--START OF FOOTER-->
+        <footer class="background">
+
+
+            <img id="footerlogo" src=" img/logo.png" alt="Logo">
+            <h2>Felix Schlicker- Codefactory 2021</h2>
+
+
+        </footer>
+        <!--END OF FOOTER-->
+
+    </div>
+    <!--CONTAINER DIV END-->
+
+    <!--Script Library Links-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
